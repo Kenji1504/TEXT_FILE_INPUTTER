@@ -9,7 +9,15 @@ with open("mylife.txt", "a") as file_input:
     text_message = str(input("Input a message: "))
     # append user's input into the text file
     file_input.write(text_message + "\n")
-    # ask user if they want to input another message
-    try_again = str(input("Do you want to input another message to the text file? (yes/no)?"))
+# ask user if they want to input another message
+try_again = str(input("Do you want to input another message into the text file? (yes/no)?"))
+try_again = try_again.lower()
+while True:
     # if answer is yes, repeat the program
+    if try_again == "yes":
+        with open("mylife.txt", "a") as file_input:
+            text_message = str(input("Input a message: "))
+            file_input.write(text_message + "\n")
+        try_again = str(input("Do you want to input another message into the text file? (yes/no)?"))
+        try_again = try_again.lower()
     # if no, end the program
