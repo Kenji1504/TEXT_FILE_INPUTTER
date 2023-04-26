@@ -10,5 +10,6 @@ with open("mylife.txt", "a") as file_input:
     # append user's input into the text file
     file_input.write(text_message + "\n")
     # ask user if they want to input another message
+    try_again = str(input("Do you want to input another message to the text file? (yes/no)?"))
     # if answer is yes, repeat the program
     # if no, end the program
