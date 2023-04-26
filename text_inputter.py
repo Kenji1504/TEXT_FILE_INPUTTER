@@ -8,6 +8,7 @@ with open("mylife.txt", "a") as file_input:
     # ask for user's message input
     text_message = str(input("Input a message: "))
     # append user's input into the text file
+    file_input.write(text_message + "\n")
     # ask user if they want to input another message
     # if answer is yes, repeat the program
     # if no, end the program
