@@ -35,6 +35,8 @@ while True:
         try_again = try_again.lower()
     # if no, end the program
     elif try_again == "no":
+        time.sleep(1)
+        print("\033[1m" + "\nNow, click on mylife.txt to see your inputted message.")
         break
     # if invalid program, ask the user again
     else:
