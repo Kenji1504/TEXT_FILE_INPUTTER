@@ -4,6 +4,10 @@
 # then the inputted message will be appended to an assigned text file.
 
 import time
+import pyfiglet
+# print the title
+PROGRAM_TITLE = "T E X T  F I L E  I N P U T T E R"
+print("\033[1m" + "\033[96m" + pyfiglet.figlet_format(PROGRAM_TITLE.center(70), font= "mini")) 
 
 # open a text file
 with open("mylife.txt", "a") as file_input:
